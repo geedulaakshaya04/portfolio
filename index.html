@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geedula Akshaya | AI Developer Portfolio</title>
+
+  <!-- ===== SEO META TAGS ===== -->
+  <meta name="description" content="Geedula Akshaya - AI Developer Portfolio, Computer Vision, Machine Learning, Python projects. B.Tech Artificial Intelligence student at Anurag University, Hyderabad." />
+  <meta name="keywords" content="AI developer, machine learning, computer vision, python developer portfolio, NLP, OpenCV, face recognition, Geedula Akshaya, Anurag University" />
+  <meta name="author" content="Geedula Akshaya" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (for LinkedIn / social sharing) -->
+  <meta property="og:title" content="Geedula Akshaya | AI Developer Portfolio" />
+  <meta property="og:description" content="AI Developer specialising in Computer Vision, NLP and full-stack development. View projects and get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geedula-akshaya.vercel.app" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Geedula Akshaya | AI Developer Portfolio" />
+  <meta name="twitter:description" content="AI Developer specialising in Computer Vision, NLP and full-stack development." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-loading">
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">GA</span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">GA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-section="home">Home</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#education" data-section="education">Education</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" data-section="certifications">Certifications</a></li>
+      <li><a href="#achievements" data-section="achievements">Achievements</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== SECTION 1: HOME ===== -->
+  <section id="home" class="hero-section">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-fade" style="--delay:0.1s">Hello, I am</p>
+      <h1 class="hero-name" id="heroName" aria-label="Geedula Akshaya">
+        <span class="word-1">
+          <span class="letter" style="--i:0">G</span><span class="letter" style="--i:1">E</span><span class="letter" style="--i:2">E</span><span class="letter" style="--i:3">D</span><span class="letter" style="--i:4">U</span><span class="letter" style="--i:5">L</span><span class="letter" style="--i:6">A</span>
+        </span>
+        <span class="name-space"> </span>
+        <span class="word-2">
+          <span class="letter accent" style="--i:8">A</span><span class="letter accent" style="--i:9">K</span><span class="letter accent" style="--i:10">S</span><span class="letter accent" style="--i:11">H</span><span class="letter accent" style="--i:12">A</span><span class="letter accent" style="--i:13">Y</span><span class="letter accent" style="--i:14">A</span>
+        </span>
+      </h1>
+      <p class="hero-role reveal-fade" style="--delay:1.1s">Artificial Intelligence Undergraduate</p>
+      <p class="hero-sub reveal-fade" style="--delay:1.3s">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink"></span>
+      </p>
+      <div class="hero-cta reveal-fade" style="--delay:1.6s">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="btn-github" id="heroGithubBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="resume.pdf" download class="btn-outline" id="resumeBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint reveal-fade" style="--delay:2s">
+      <div class="scroll-hint-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: ABOUT ===== -->
+  <section id="about" class="about-section section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-col" data-aos="fade-right">
+          <div class="photo-frame">
+            <div class="photo-ring ring-1"></div>
+            <div class="photo-ring ring-2"></div>
+            <img src="WhatsApp_Image_2026-03-27_at_11.24.51-removebg-preview.png" alt="Geedula Akshaya" class="profile-photo" />
+          </div>
+          <div class="contact-pills">
+            <a href="tel:9121100277" class="pill" id="phoneLink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.04a16 16 0 0 0 6.06 6.06l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              9121100277
+            </a>
+            <a href="mailto:geedulaakshaya04@gmail.com" class="pill" id="emailLink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              geedulaakshaya04@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/geedula-akshaya-b3150133a/" target="_blank" rel="noopener" class="pill pill-linkedin" id="linkedinLink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="pill pill-github" id="githubLink">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-text-col" data-aos="fade-left">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Passionate <span class="gradient-text">AI Developer</span></h2>
+          <p class="about-desc">B.Tech Artificial Intelligence student with hands-on experience in Computer Vision and NLP. Developed a real-time AI attendance system using OpenCV, Haar Cascade and LBPH algorithm, and an NLP-driven resume analysis system with automated keyword extraction and job-role matching.</p>
+          <p class="about-desc">Strong foundation in Data Structures, Object-Oriented Programming, and relational databases, with a focus on building scalable, practical AI-driven solutions that address real-world challenges.</p>
+          <div class="stat-row">
+            <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+              <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+              <span class="stat-num" data-count="1">0</span>
+              <span class="stat-label">Certification</span>
+            </div>
+            <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+              <span class="stat-num" data-count="2028">0</span>
+              <span class="stat-label">Graduating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: EDUCATION ===== -->
+  <section id="education" class="education-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Education</div>
+        <h2 class="section-title center">Academic <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="tl-dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="tl-card">
+            <span class="tl-badge">Current</span>
+            <span class="tl-year">2024 – 2028</span>
+            <h3 class="tl-title">Bachelor of Technology – Artificial Intelligence</h3>
+            <p class="tl-inst">Anurag University, Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="tl-dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="tl-card">
+            <span class="tl-year">2022 – 2024</span>
+            <h3 class="tl-title">Intermediate (MPC)</h3>
+            <p class="tl-inst">Narayana Junior College, Hyderabad</p>
+          </div>
+        </div>
+
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="tl-dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="tl-card">
+            <span class="tl-year">2021 – 2022</span>
+            <h3 class="tl-title">SSC (10th Grade)</h3>
+            <p class="tl-inst">St Mary's High School, Hyderabad</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: SKILLS ===== -->
+  <section id="skills" class="skills-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Technical Skills</div>
+        <h2 class="section-title center">My <span class="gradient-text">Tech Stack</span></h2>
+      </div>
+      <div class="skills-layout">
+        <!-- Progress Bars Side -->
+        <div class="skills-bars" data-aos="fade-right">
+          <h3 class="skills-sub-title">Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>Python</span><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>OpenCV / Computer Vision</span><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>HTML / CSS / JavaScript</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>SQL / MySQL / SQLite</span><span class="skill-pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>NLP (Natural Language Processing)</span><span class="skill-pct">65%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>TypeScript</span><span class="skill-pct">70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>AWS Cloud</span><span class="skill-pct">60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+        </div>
+        <!-- Category Tags Side -->
+        <div class="skills-cats" data-aos="fade-left">
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Languages
+            </div>
+            <div class="tag-cloud">
+              <span class="tag">Python</span><span class="tag">C</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              AI & Libraries
+            </div>
+            <div class="tag-cloud">
+              <span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">NLP</span><span class="tag">HAAR Cascade</span><span class="tag">LBPH</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              Web Technologies
+            </div>
+            <div class="tag-cloud">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Databases
+            </div>
+            <div class="tag-cloud">
+              <span class="tag">MySQL</span><span class="tag">SQLite</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-header">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Core Concepts
+            </div>
+            <div class="tag-cloud">
+              <span class="tag">DSA</span><span class="tag">OOP</span><span class="tag">DBMS</span><span class="tag">Discrete Math</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: PROJECTS ===== -->
+  <section id="projects" class="projects-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Projects</div>
+        <h2 class="section-title center">What I've <span class="gradient-text">Built</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0" id="proj-attendance">
+          <div class="project-preview proj-preview-cv">
+            <div class="proj-preview-inner">
+              <div class="pp-camera-frame">
+                <div class="pp-face-detect"></div>
+                <div class="pp-scan-line"></div>
+              </div>
+              <div class="pp-data-panel">
+                <div class="pp-row"><span class="pp-dot pp-dot-green"></span><span>Akshaya · 09:01 AM</span></div>
+                <div class="pp-row"><span class="pp-dot pp-dot-green"></span><span>Rahul · 09:03 AM</span></div>
+                <div class="pp-row"><span class="pp-dot pp-dot-yellow"></span><span>Priya · 09:07 AM</span></div>
+              </div>
+            </div>
+            <div class="proj-preview-label">Live Face Recognition</div>
+          </div>
+          <div class="project-num">01</div>
+          <div class="project-stripe"></div>
+          <h3 class="project-title">Smart Attendance System</h3>
+          <div class="project-stack">
+            <span class="stag">Python</span><span class="stag">OpenCV</span><span class="stag">NumPy</span><span class="stag">SQLite</span>
+          </div>
+          <p class="project-desc">Developed a real-time AI attendance system using OpenCV, Haar Cascade and LBPH face recognition algorithm with automated timestamp-based logging via SQLite database integration and optimized real-time performance.</p>
+          <div class="project-links">
+            <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="proj-btn proj-btn-gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="proj-btn proj-btn-demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100" id="proj-resume">
+          <div class="project-preview proj-preview-nlp">
+            <div class="proj-preview-inner">
+              <div class="pp-nlp-tokens">
+                <span class="pp-token pp-t1">Python</span>
+                <span class="pp-token pp-t2">Machine Learning</span>
+                <span class="pp-token pp-t3">NLP</span>
+                <span class="pp-token pp-t4">OpenCV</span>
+                <span class="pp-token pp-t5">SQL</span>
+              </div>
+              <div class="pp-match-score">
+                <svg viewBox="0 0 80 80" width="70" height="70">
+                  <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(168,85,247,0.15)" stroke-width="8"/>
+                  <circle cx="40" cy="40" r="32" fill="none" stroke="url(#grd1)" stroke-width="8" stroke-dasharray="148 53" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+                  <defs><linearGradient id="grd1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#d946ef"/></linearGradient></defs>
+                  <text x="40" y="45" text-anchor="middle" fill="#eeeaf8" font-size="14" font-weight="800">74%</text>
+                </svg>
+                <span class="pp-match-label">Match</span>
+              </div>
+            </div>
+            <div class="proj-preview-label">NLP · Keyword Extraction</div>
+          </div>
+          <div class="project-num">02</div>
+          <div class="project-stripe"></div>
+          <h3 class="project-title">Resume Analyzer</h3>
+          <div class="project-stack">
+            <span class="stag">Python</span><span class="stag">NLP</span>
+          </div>
+          <p class="project-desc">Developed an NLP-based intelligent system for advanced resume keyword extraction and automated job-role matching. Implemented robust text preprocessing pipelines and evaluation logic to assess candidate-role alignment with measurable accuracy.</p>
+          <div class="project-links">
+            <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="proj-btn proj-btn-gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="proj-btn proj-btn-demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200" id="proj-netflix">
+          <div class="project-preview proj-preview-netflix">
+            <div class="proj-preview-inner">
+              <div class="pp-nav-bar">
+                <span class="pp-nav-logo">STREAM</span>
+                <div class="pp-nav-links"><span></span><span></span><span></span></div>
+              </div>
+              <div class="pp-hero-banner"></div>
+              <div class="pp-thumb-row">
+                <div class="pp-thumb"></div><div class="pp-thumb"></div><div class="pp-thumb pp-thumb-hi"></div><div class="pp-thumb"></div>
+              </div>
+            </div>
+            <div class="proj-preview-label">Streaming UI · Responsive</div>
+          </div>
+          <div class="project-num">03</div>
+          <div class="project-stripe"></div>
+          <h3 class="project-title">Netflix-Inspired Streaming Platform</h3>
+          <div class="project-stack">
+            <span class="stag">HTML</span><span class="stag">CSS</span><span class="stag">JavaScript</span>
+          </div>
+          <p class="project-desc">Engineered a fully responsive Netflix-style video streaming interface with dynamic content navigation, structured layout architecture, and optimized cross-device compatibility delivering a smooth, immersive user experience.</p>
+          <div class="project-links">
+            <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="proj-btn proj-btn-gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="proj-btn proj-btn-demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300" id="proj-corex">
+          <div class="project-preview proj-preview-ts">
+            <div class="proj-preview-inner">
+              <div class="pp-sidebar">
+                <div class="pp-sb-item pp-sb-active"></div>
+                <div class="pp-sb-item"></div>
+                <div class="pp-sb-item"></div>
+                <div class="pp-sb-item"></div>
+              </div>
+              <div class="pp-main-content">
+                <div class="pp-student-card">
+                  <div class="pp-avatar">SA</div>
+                  <div class="pp-student-info">
+                    <div class="pp-sname"></div>
+                    <div class="pp-progress-bar"><div class="pp-progress-fill" style="width:78%"></div></div>
+                  </div>
+                </div>
+                <div class="pp-student-card">
+                  <div class="pp-avatar" style="background:linear-gradient(135deg,#d946ef,#38bdf8)">RK</div>
+                  <div class="pp-student-info">
+                    <div class="pp-sname"></div>
+                    <div class="pp-progress-bar"><div class="pp-progress-fill" style="width:91%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-preview-label">TypeScript · Student Management</div>
+          </div>
+          <div class="project-num">04</div>
+          <div class="project-stripe"></div>
+          <h3 class="project-title">Corex</h3>
+          <div class="project-stack">
+            <span class="stag">TypeScript</span>
+          </div>
+          <p class="project-desc">Built a modular, scalable web-based student management platform using TypeScript architecture with structured, maintainable component design. Applied strong type-safety principles for long-term code reliability and extensibility.</p>
+          <div class="project-links">
+            <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="proj-btn proj-btn-gh">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="proj-btn proj-btn-demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: CERTIFICATIONS ===== -->
+  <section id="certifications" class="cert-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Certifications</div>
+        <h2 class="section-title center">My <span class="gradient-text">Credentials</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" data-aos="zoom-in" id="awsCert">
+          <div class="cert-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.354 15.354A9 9 0 0 1 4.646 4.646"/><path d="M3 12a9 9 0 1 0 18 0"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">AWS Academy</span>
+            <h3 class="cert-name">AWS Academy Graduate</h3>
+            <p class="cert-detail">Cloud Foundations</p>
+          </div>
+          <div class="cert-footer">
+            <span class="cert-yr">2024 – 2028</span>
+            <span class="cert-verified">Verified</span>
+          </div>
+          <div class="cert-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: ACHIEVEMENTS ===== -->
+  <section id="achievements" class="achieve-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Achievements</div>
+        <h2 class="section-title center">Key <span class="gradient-text">Highlights</span></h2>
+      </div>
+      <div class="achieve-grid">
+
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="achieve-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.354 15.354A9 9 0 0 1 4.646 4.646"/><path d="M3 12a9 9 0 1 0 18 0"/><path d="M9 9h6v6H9z"/></svg>
+          </div>
+          <div class="achieve-content">
+            <h3 class="achieve-title">AWS Academy Graduate</h3>
+            <p class="achieve-desc">Completed AWS Academy Cloud Foundations certification, demonstrating proficiency in cloud architecture, services, and deployment strategies on AWS infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="achieve-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="achieve-content">
+            <h3 class="achieve-title">4+ AI Projects Delivered</h3>
+            <p class="achieve-desc">Successfully built and deployed four end-to-end AI projects spanning computer vision, NLP, web development, and TypeScript architecture – each solving a real-world problem.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="achieve-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="achieve-content">
+            <h3 class="achieve-title">Real-Time Face Recognition System</h3>
+            <p class="achieve-desc">Engineered a production-level real-time face recognition attendance system using HAAR Cascade and LBPH – demonstrating applied AI skills beyond classroom scope.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="achieve-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="achieve-content">
+            <h3 class="achieve-title">Multi-Domain Technical Expertise</h3>
+            <p class="achieve-desc">Developed cross-domain expertise spanning AI libraries, web technologies, cloud platforms, and databases – demonstrating versatility as a full-stack AI developer.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub Contribution Graph -->
+      <div class="github-graph" data-aos="fade-up">
+        <h3 class="github-graph-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:8px"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub Activity
+        </h3>
+        <img src="https://ghchart.rshah.org/a855f7/geedulaakshaya04" alt="GitHub Contribution Graph for geedulaakshaya04" class="github-chart" loading="lazy" />
+        <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="gh-profile-link">View Full Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: CONTACT ===== -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag center">Contact</div>
+        <h2 class="section-title center">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-sub">I am open to internship opportunities, collaborations, and AI projects. Feel free to reach out.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="cinfo-card" id="cCard1">
+            <div class="cinfo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="cinfo-label">Email</span>
+              <a href="mailto:geedulaakshaya04@gmail.com" class="cinfo-val">geedulaakshaya04@gmail.com</a>
+            </div>
+          </div>
+          <div class="cinfo-card" id="cCard2">
+            <div class="cinfo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.04a16 16 0 0 0 6.06 6.06l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="cinfo-label">Phone</span>
+              <a href="tel:9121100277" class="cinfo-val">+91 9121100277</a>
+            </div>
+          </div>
+          <div class="cinfo-card" id="cCard3">
+            <div class="cinfo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="cinfo-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/geedula-akshaya-b3150133a/" target="_blank" rel="noopener" class="cinfo-val">geedula-akshaya</a>
+            </div>
+          </div>
+          <div class="cinfo-card" id="cCard4">
+            <div class="cinfo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="cinfo-label">GitHub</span>
+              <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" class="cinfo-val">geedulaakshaya04</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" data-aos="fade-left" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="formName">Full Name</label>
+            <input type="text" id="formName" name="name" placeholder="Your full name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Email Address</label>
+            <input type="email" id="formEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="formSubject">Subject</label>
+            <input type="text" id="formSubject" name="subject" placeholder="What is this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="formSubmit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <p class="form-success" id="formSuccess">Message sent successfully! I will get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">GA</span>
+        <p class="footer-tagline">Geedula Akshaya<br><span>Artificial Intelligence Undergraduate</span></p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/geedulaakshaya04" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/geedula-akshaya-b3150133a/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:geedulaakshaya04@gmail.com" aria-label="Email" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Geedula Akshaya &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
