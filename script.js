@@ -204,7 +204,7 @@ function animateCounter(el) {
   let cur = 0;
   function tick() {
     cur = Math.min(cur + step, target);
-    el.textContent = Math.round(cur).toLocaleString();
+    el.textContent = Math.round(cur).toString();
     if (cur < target) requestAnimationFrame(tick);
   }
   tick();
