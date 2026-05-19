@@ -92,33 +92,7 @@ window.addEventListener('load', () => {
   canvas.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
 })();
 
-// ─── TYPED TEXT ─────────────────────────────────
-(function typedEffect() {
-  const el = document.getElementById('typedText');
-  if (!el) return;
-  const phrases = [
-    'Computer Vision Engineer',
-    'NLP Practitioner',
-    'Full-Stack Developer',
-    'AI Problem Solver',
-    'AWS Cloud Graduate'
-  ];
-  let pi = 0, ci = 0, deleting = false;
 
-  function tick() {
-    const phrase = phrases[pi];
-    if (!deleting) {
-      el.textContent = phrase.slice(0, ++ci);
-      if (ci === phrase.length) { deleting = true; return setTimeout(tick, 2200); }
-      setTimeout(tick, 70);
-    } else {
-      el.textContent = phrase.slice(0, --ci);
-      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; return setTimeout(tick, 400); }
-      setTimeout(tick, 38);
-    }
-  }
-  setTimeout(tick, 1800);
-})();
 
 // ─── NAVBAR ─────────────────────────────────────
 const navbar    = document.getElementById('navbar');
