@@ -421,7 +421,7 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); over
    ============================================================ */
 .cert-section { background: var(--bg2); }
 
-.cert-grid { display: flex; justify-content: center; }
+.cert-grid { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
 
 .cert-card {
   width: 100%; max-width: 540px;
